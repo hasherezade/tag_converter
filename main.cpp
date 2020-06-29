@@ -49,17 +49,17 @@ bool process_file(const std::string &in_file, const std::string &out_file, const
     }
     infile.close();
 
-    if (module_name.length() > 0) {
-        outfile << "bpdll " << "\"" << module_name << "\"" << std::endl;
-        outfile << "run " << std::endl;
+    if (module_name.length() == 0) {
+        std::cerr << "Module name is missing!\n";
+        return false;
     }
-
+    outfile << "$base=" << "\"" << module_name << ":base\"" << std::endl;
     std::map<DWORD, std::string>::iterator itr;
     for (itr = rva_to_cmt.begin(); itr != rva_to_cmt.end(); itr++) {
         const std::string cmt_str = itr->second;
         const DWORD rva = itr->first;
-        outfile << "cmt :$" << std::hex << rva << "," << "\"" << cmt_str << "\"" << std::endl;
-        outfile << "bookmark :$" << std::hex << rva << std::endl;
+        outfile << "cmt $base+" << std::hex << rva << "," << "\"" << cmt_str << "\"" << std::endl;
+        outfile << "bookmark $base+" << std::hex << rva << std::endl;
     }
     outfile.close();
     return true;

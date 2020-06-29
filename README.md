@@ -1,7 +1,7 @@
 # tag_converter
 [![Build status](https://ci.appveyor.com/api/projects/status/f5kckoebkq0cuw9l?svg=true)](https://ci.appveyor.com/project/hasherezade/tag-converter)
 
-Convert the files in a `.tag` format into scripts that automatically set the labels in debuggers.
+Convert the `.tag` files - generated i.e. by [PE-sieve](https://github.com/hasherezade/pe-sieve), [Tiny Tracer](https://github.com/hasherezade/tiny_tracer), [PE-bear](https://github.com/hasherezade/pe-bear-releases) - into scripts that automatically set the labels in debuggers.
 
 Currently supported:
 -

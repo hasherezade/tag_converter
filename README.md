@@ -3,5 +3,10 @@
 
 Convert the files in a `.tag` format into scripts that automatically set the labels in debuggers.
 
-Supported:
-+ x64dbg
+Currently supported:
+-
++ [x64dbg](https://x64dbg.com)
+
+Download:
+-
+Fresh builds can be downloaded from [the build server](https://ci.appveyor.com/project/hasherezade/exe-to-dll) (click on the build and choose the "Artifacts" tab)

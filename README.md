@@ -5,7 +5,7 @@ Convert the files in a `.tag` format into scripts that automatically set the lab
 
 Currently supported:
 -
-+ [x64dbg](https://x64dbg.com)
++ [x64dbg](https://x64dbg.com) - read [HOWTO](https://github.com/hasherezade/tag_converter/wiki/Loading-tags-into-x64dbg)
 
 Download:
 -

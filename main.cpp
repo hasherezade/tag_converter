@@ -80,7 +80,9 @@ std::string fetch_module_name(std::string filename)
 int main(int argc, char* argv[])
 {
     if (argc < 2) {
-        std::cerr << "Args: <in_file> [module_name] [out_file]\n";
+        std::cout << "Tag Converter\n"
+            << "URL: https://github.com/hasherezade/tag_converter\n";
+        std::cout << "Args: <in_file> [module_name] [out_file]\n";
         return 0;
     }
     std::string module_name = fetch_module_name(argv[1]);

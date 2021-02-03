@@ -4,6 +4,8 @@
 #include <string>
 #include <map>
 
+#define VERSION "1.0"
+
 #define TAG_DELIM ';'
 
 bool is_numerical(const std::string &str)
@@ -80,7 +82,7 @@ std::string fetch_module_name(std::string filename)
 int main(int argc, char* argv[])
 {
     if (argc < 2) {
-        std::cout << "Tag Converter\n"
+        std::cout << "Tag Converter v" << VERSION << "\n"
             << "URL: https://github.com/hasherezade/tag_converter\n";
         std::cout << "Args: <in_file> [module_name] [out_file]\n";
         return 0;

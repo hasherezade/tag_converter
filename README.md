@@ -9,4 +9,6 @@ Currently supported:
 
 Download:
 -
-Fresh builds can be downloaded from [the build server](https://ci.appveyor.com/project/hasherezade/tag-converter) (click on the build and choose the "Artifacts" tab)
+Stable builds are available in [releases](https://github.com/hasherezade/tag_converter/releases).
+
+Test builds can be downloaded from [the build server](https://ci.appveyor.com/project/hasherezade/tag-converter) (click on the build and choose the "Artifacts" tab)
